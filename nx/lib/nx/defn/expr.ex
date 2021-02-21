@@ -356,7 +356,7 @@ defmodule Nx.Defn.Expr do
         tuple when is_tuple(tuple) ->
           raise ArgumentError,
                 "defn functions expects either numbers or tensors as arguments. " <>
-                  "If you want to pass a tuple, you must explicitly pattern match on the tuple in the signature" <>
+                  "If you want to pass a tuple, you must explicitly pattern match on the tuple in the signature " <>
                   "Got: #{inspect(tuple)}"
 
         other ->
